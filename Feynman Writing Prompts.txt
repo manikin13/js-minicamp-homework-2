@@ -1,0 +1,13 @@
+For Loop: keep repeating same function for predefined number of cycles.
+
+&& : Boolean AND - both values need to be true for TRUE
+
+|| : Boolean OR - either value can be true for TRUE
+
+! : NOT - opposite of current value
+
+Array: A variable with multiple values.
+
+git: A program to track changes in files in a collabaritive environment
+
+GitHub: An online site for collabaritive document sharing and editing using git.
