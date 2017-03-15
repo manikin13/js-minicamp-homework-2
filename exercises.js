@@ -15,16 +15,27 @@ function greeting(language) {
   //language: 'English' -> 'Hello!'
   //language: 'Spanish' -> 'Hola!'
   //if language is undefined return 'Hello!'
-  if (language === 'German') {
-    return 'Guten Tag!';
+  
+  var checkLanguage = ['German', 'English', 'Spanish'];
+  var languageResponse = ['Guten Tag!', 'Hello!', 'Hola!'];
+  var i;
+  for (i = 0; i <= checkLanguage.length -1; i++) {
+    if (language === checkLanguage[i]) {
+      return languageResponse[i];
+    }
   }
-  else if (language === 'English') {
-    return 'Hello!';
-  }
-  else if (language === 'Spanish') {
-    return 'Hola!';
-  }
-  return 'Hello!';
+  return languageResponse[1];
+
+  // if (language === 'German') {
+  //   return 'Guten Tag!';
+  // }
+  // else if (language === 'English') {
+  //   return 'Hello!';
+  // }
+  // else if (language === 'Spanish') {
+  //   return 'Hola!';
+  // }
+  // return 'Hello!';
 }
 
 function isTenOrFive(num) {
@@ -95,7 +106,7 @@ function isPrime(num) {
     if (multiple === 1 || num === 2 || num === 3){
         return true;
       }
-    return false;  
+    return false;
   }
 
 function returnFirst(arr) {
