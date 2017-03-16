@@ -15,7 +15,7 @@ function greeting(language) {
   //language: 'English' -> 'Hello!'
   //language: 'Spanish' -> 'Hola!'
   //if language is undefined return 'Hello!'
-  
+
   var checkLanguage = ['German', 'English', 'Spanish'];
   var languageResponse = ['Guten Tag!', 'Hello!', 'Hola!'];
   var i;
@@ -91,22 +91,26 @@ function isPrime(num) {
   //hint: a prime number is only evenly divisible by itself and 1
   //hint2: you can solve this using a for loop
   //note: 0 and 1 are NOT considered prime numbers
-    var i;
-    var primeCheck;
+  //  var i;
+  //  var primeCheck;
     if (num === 0 || num === 1){
       return false;
     }
-    var multiple = 1;
-    for (i = 2; i <= num; i++) {
-      primeCheck = num % i;
-      if (primeCheck === 0 && num != i){
-        multiple = multiple + 1;
-          }
-        }
-    if (multiple === 1 || num === 2 || num === 3){
-        return true;
+  //  var multiple = 1;
+    for (var i = 2; i < num; i++) {
+  //    primeCheck = num % i;
+  //    if (primeCheck === 0 && num != i){
+  //      multiple = multiple + 1;
+      if (num % i === 0) {
+        return false;
       }
-    return false;
+    }
+    return true;      
+  //      }
+  //  if (multiple === 1 || num === 2 || num === 3){
+  //      return true;
+  //    }
+  //  return false;
   }
 
 function returnFirst(arr) {
